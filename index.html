@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"/>
+    <head>
+        <title>spencer.computer</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="spencer and a computer"/>
+        <meta name="keywords" content="Spencer, Computer"/>
+        <meta name="author" content="Spencer Walters"/>
+        <meta name="viewport" content="width=device-width, 
+                                       initial-scale=1.0"/>
+        <base href="spencer.computer" target="_blank"/>
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/index.css"/>
+        <script src="script/index.js"></script>
+    </head>
+    <body>
+        <div id="audio-control">
+            <button id="audio-button" 
+                    onclick="audio_toggle()">&#x25b6;</button>
+        </div>
+        <a id="shuttle-link" href="home.html" target="_self">  
+            <div class="content">
+                <div class="header">
+                    <h1>
+                        <span id="welcome">
+                            welcome</br>to</br>
+                        </span>
+                            spencer.computer</br>
+                        <span id="click-anywhere">
+                            click anywhere
+                        </span>
+                        <span id="touch-anywhere">
+                            touch anywhere
+                        </span>
+                    </h1>
+                </div>
+                <div class="computer-containter">
+                    <img onmouseover="play_song_melody()" 
+                         onmouseout="play_song()"
+                         id="computer-pic" 
+                         src="images/computer2.gif"/>
+                </div>
+            </div>
+        </a>
+        <div class="music">
+            <audio id="song" autoplay muted loop>
+                <source src="audio/song.mp3" type="audio/mpeg">
+            </audio> 
+            <audio id="song-melody" autoplay muted loop>
+                <source src="audio/song_melody.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </body>
+</html>

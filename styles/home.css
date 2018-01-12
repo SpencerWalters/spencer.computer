@@ -1,0 +1,297 @@
+/* Mobile First */
+@font-face {
+    font-family: cm;
+    src: url("../fonts/cmunrm.woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: terminus;
+    src: url("../fonts/Terminus.woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: monaco;
+    src: url("../fonts/monaco-webfont.woff");
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #888888;
+}
+
+p {
+    text-align: center;
+    font-size: 1.0em;
+}
+
+.code {
+    font-family: monaco;
+    font-size: 0.9em;
+}
+
+.header {
+    display: block;
+    margin: auto;
+    color: black;
+    font-size: 0.7em;
+    letter-spacing: 0.5em;
+    font-family: terminus;
+    text-align: center;
+    max-width: 100%;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.nav-item {
+    display: block;
+}
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: terminus;
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+    padding: 5px 8px;
+    text-decoration: none;
+    transition:         background-color 0.15s ease-out, 
+                        color 0.15s ease-in;
+    -moz-transition:    background-color 0.15s ease-out, 
+                        color 0.15s ease-in;
+    -webkit-transition: background-color 0.15s ease-out, 
+                        color 0.15s ease-in;
+    -o-transition:      background-color 0.15s ease-out, 
+                        color 0.15s ease-in;
+
+}
+
+.nav-link:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.nav-link:active {
+    background-color: #eee;
+    color: black;
+}
+
+.column.side {
+    width: 0%;
+}
+.column.middle {
+    width: 100%;
+    padding: 0px 40px;
+    font-family: cm;
+    box-sizing: border-box;
+    min-height: 6in;
+}
+
+.middle-header {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #333;
+}
+.column.footer-middle {
+    width: 100%;
+    background-color: #333;
+} 
+.column.footer-side {
+    width: 0%;
+    background-color: #333;
+} 
+.footer-bar {
+    display: block;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.footer-item {
+    display: block;
+}
+.footer-link {
+    display: block;
+    color: #ddd;
+    text-align: center;
+    font-family: terminus;
+    font-size: 0.7em;
+    letter-spacing: 0.3em;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-link:active {
+    color: white;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 1% 2%;
+    margin: 1% 0px;
+    box-sizing: border-box;
+    font-family: cm;
+    font-size: 1.0em;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 1% 2%;
+    margin: 1% 0;
+    box-sizing: border-box;
+    font-family: cm;
+    font-size: 1.0em;
+    resize: none;
+}
+
+input[type=submit] {
+    background: #888;
+    border: 0px;
+    width: 100%; 
+    height: 20%;
+    margin: 1% 0 4%;
+    padding: 2% 0;
+    font-size: 1.0em;
+    color: white;
+    font-family: terminus;
+    cursor: pointer;
+}
+
+#me {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: 1.4em;
+        text-align: justify; 
+    }
+
+    .header {
+        font-size: 1.3em;
+        letter-spacing: 1.5em;
+        padding: 10px;
+    }
+
+    .nav-bar {
+        padding: 0 16.5%;
+    }
+    .nav-item {
+        float: left;
+    }
+    .nav-link {
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+        padding: 14px 16px;
+        text-decoration: none;
+
+        transition:         background-color 0.15s ease-out, 
+                            color 0.15s ease-in;
+        -moz-transition:    background-color 0.15s ease-out, 
+                            color 0.15s ease-in;
+        -webkit-transition: background-color 0.15s ease-out, 
+                            color 0.15s ease-in;
+        -o-transition:      background-color 0.15s ease-out, 
+                            color 0.15s ease-in;
+    }
+    .nav-link:active {
+        background-color: #F44; 
+    }
+
+    .column {
+        float: left;
+        box-sizing: border-box;
+    }
+    .column.middle {
+        width: 67%; 
+        min-height: 10in;
+    }
+    .column.side {
+        width: 16.5%;
+        background-color: #cccccc; 
+        min-height: 10in;
+    }
+    .middle-header {font-size: 2.5em;}
+
+    .footer {
+        background-color: #333;
+    }
+    .column.footer-middle {
+        width: 67%;
+        height: 1.21in;
+        background-color: #333;
+    } 
+    .column.footer-side {
+        width: 16.5%;
+        height: 1.21in;
+        background-color: #333;
+    } 
+
+    .footer-bar {
+        display: block;
+        padding: 0.04in 0;
+    }
+    .footer-link {
+        text-align: left;
+        font-size: 1.1em;
+        letter-spacing: 0.2em;
+        padding: 8px 10px;
+        text-decoration: none;
+   
+    }
+   
+    input[type=text], 
+    input[type=email], 
+    textarea {
+        font-size: 1.4em;
+    }
+    input[type=submit] {
+        font-size: 1.5em;
+    }
+
+    #me {
+        float: left;
+        margin: 35px; 
+        max-width: 30%;
+
+        filter: none;
+        transition: filter 1s;
+        -moz-transition: filter 1s;
+        -webkit-transition: filter 1s;
+        -o-transition: filter 1s;
+        transition-timing-function: linear;
+        -moz-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+    }
+    #me:hover {
+        filter: blur(10px);
+    }
+}

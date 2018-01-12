@@ -1,0 +1,110 @@
+/* Mobile First */
+@font-face {
+    font-family: terminus;
+    src: url("../fonts/Terminus.woff");
+    font-style: normal;
+}
+
+body {background-color: white;}
+
+#audio-button {display: none;}
+
+.content {cursor: default;}
+
+.header {
+    font-size: 0.7em;
+    letter-spacing: 0.5em;
+    font-family: terminus;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    line-height: 2;
+}
+
+#welcome {
+    font-size: 0.65em;
+    letter-spacing: 1em;
+}
+
+#touch-anywhere {
+    display: block;
+    font-size: 0.5em;
+    letter-spacing: 0.3em;
+    line-height: 3;
+}
+
+#click-anywhere {display: none;}
+
+#computer-pic {
+    display: block;
+    margin: auto;
+    border: 0px;
+    max-width: 100%; 
+    height: auto; 
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.computer-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#shuttle-link:link,
+#shuttle-link:visited,
+#shuttle-link:hover,
+#shuttle-link:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .header {
+        color: black;
+        font-size: 1.5em;
+        letter-spacing: 1.5em;
+        line-height: 2;
+    }
+    #welcome {
+        font-size: 0.7em;
+        letter-spacing: 1.5em; 
+    }
+    #click-anywhere {
+        font-size: 0.3em; 
+        letter-spacing: 0.3em;
+        display: block;
+    }
+    #touch-anywhere {display: none;} 
+
+    #audio-button {
+        background-color: white;
+        border: none;
+        color: #bbb;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 2em;
+        font-family: sans-serif;
+        padding: 15px 0 0 15px;
+        cursor: pointer;
+    }
+
+    #computer-pic {
+        width: 30%;
+        max-width: 30%; 
+        height: auto; 
+        object-fit: contain;
+        transition: width 5s;
+        -moz-transition: width 5s;
+        -webkit-transition: width 5s;
+        -o-transition: width 5s;
+        transition-timing-function: linear;
+        -moz-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+    }
+
+    #computer-pic:hover {width: 10%;}
+}
