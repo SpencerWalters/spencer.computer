@@ -42,8 +42,9 @@ p {
     display: block;
     margin: auto;
     color: black;
-    font-size: 0.7em;
+    font-size: 1em;
     letter-spacing: 0.5em;
+    padding: 2vh 0;
     font-family: terminus;
     text-align: center;
     max-width: 100%;
@@ -54,7 +55,7 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: #555;
 }
 .nav-item {
     display: block;
@@ -65,7 +66,7 @@ p {
     text-align: center;
     font-family: terminus;
     font-size: 1.2em;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     padding: 5px 8px;
     text-decoration: none;
     transition:         background-color 0.15s ease-out, 
@@ -76,7 +77,6 @@ p {
                         color 0.15s ease-in;
     -o-transition:      background-color 0.15s ease-out, 
                         color 0.15s ease-in;
-
 }
 
 .nav-link:hover {
@@ -95,56 +95,38 @@ p {
 }
 .column.middle {
     width: 100%;
-    padding: 0px 40px;
     font-family: cm;
     box-sizing: border-box;
     min-height: 100vh;
 }
-
 .middle-header {
+    background: #333;
+    color: white;
+    padding: 1.5vh 0;
     text-align: center;
     font-family: terminus;
-    font-size: 2.0em;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
 }
-
+.middle-content {
+    background: white;
+    padding: 5vh;
+}
 .footer {
-    background-color: #333;
-}
-.column.footer-middle {
     width: 100%;
-    background-color: #333;
+    min-height: 8vh;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
 } 
-/*
-.column.footer-middle.left {
-    width: 34%;
-} 
-.column.footer-middle.right {
-    width: 33%;
-} 
-*/
-.column.footer-side {
-    width: 0%;
-    background-color: #333;
-} 
-.footer-bar {
-    display: block;
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-.footer-item {
-    display: block;
-}
+
 .footer-link {
-    display: block;
+    display: inline-block;
     color: #ddd;
     text-align: center;
     font-family: terminus;
-    font-size: 0.7em;
-    letter-spacing: 0.3em;
-    padding: 5px 8px;
+    font-size: 2em;
+    padding: 8px 12px;
     text-decoration: none;
 }
 .footer-link:hover {
@@ -152,53 +134,6 @@ p {
 }
 .footer-link:active {
     color: white;
-}
-
-.footer-contact {
-    display: block;
-    color: #ddd;
-    text-align: center;
-    font-family: terminus;
-    font-size: 0.7em;
-    letter-spacing: 0.2em;
-    padding: 5px 8px;
-    text-decoration: none;
-}
-.footer-contact.header {
-    display: none;
-}
-
-input[type=text], input[type=email] {
-    width: 100%;
-    padding: 1% 2%;
-    margin: 1% 0px;
-    box-sizing: border-box;
-    font-family: cm;
-    font-size: 1.0em;
-}
-
-textarea {
-    width: 100%;
-    height: 250px;
-    padding: 1% 2%;
-    margin: 1% 0;
-    box-sizing: border-box;
-    font-family: cm;
-    font-size: 1.0em;
-    resize: none;
-}
-
-input[type=submit] {
-    background: #888;
-    border: 0px;
-    width: 100%; 
-    height: 20%;
-    margin: 1% 0 4%;
-    padding: 2% 0;
-    font-size: 1.0em;
-    color: white;
-    font-family: terminus;
-    cursor: pointer;
 }
 
 #me {
@@ -217,9 +152,10 @@ input[type=submit] {
     }
 
     .header {
-        font-size: 1.3em;
-        letter-spacing: 1.5em;
-        padding: 10px;
+        background: white;
+        color: black;
+        font-size: 2.7em;
+        padding: 5vh 0;
     }
 
     .nav-bar {
@@ -229,9 +165,9 @@ input[type=submit] {
         float: left;
     }
     .nav-link {
-        font-size: 1.5em;
+        font-size: 1.3em;
         letter-spacing: 0.2em;
-        padding: 14px 16px;
+        padding: 12px 16px;
         text-decoration: none;
 
         transition:         background-color 0.15s ease-out, 
@@ -253,69 +189,31 @@ input[type=submit] {
     }
     .column.middle {
         width: 67%; 
-        min-height: 100vh;
+        min-height: 90vh;
+        background: white;
     }
     .column.side {
         width: 16.5%;
-        background-color: #cccccc; 
-        min-height: 100vh;
+        background-color: white; 
+        min-height: 90vh;
     }
-    .middle-header {font-size: 2.5em;}
-
-    .footer {
-        background-color: #333;
+    .middle-header {
+        background: white;
+        color: black;
+        padding: 3vh 0;
+        font-size: 2.5em;
     }
-    .column.footer-middle {
-        height: 1.21in;
-        background-color: #333;
-    } 
-    .column.footer-middle.left {
-        width: 34%;
-    } 
-    .column.footer-middle.right {
-        width: 33%;
-    } 
-
-    .column.footer-side {
-        width: 16.5%;
-        height: 1.21in;
-        background-color: #333;
-    } 
-
-    .footer-bar {
-        display: block;
-        padding: 0.04in 0;
+    .middle-content {
+        background: #f5f5f5;
+        border-radius: 20px;
     }
     .footer-link {
-        text-align: left;
-        font-size: 1.1em;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.7em;
         letter-spacing: 0.2em;
-        padding: 8px 10px;
+        padding: 1.7vh 2.0vh;
         text-decoration: none;
-   
-    }
-    .footer-contact {
-        display: block;
-        color: #ddd;
-        text-align: right;
-        font-family: terminus;
-        font-size: 0.8em;
-        letter-spacing: 0.1em;
-        padding: 5px 8px;
-        text-decoration: none;
-    }
-    .footer-contact.header {
-        display: block;        
-        font-size: 1.4em;
-    }
-
-    input[type=text], 
-    input[type=email], 
-    textarea {
-        font-size: 1.4em;
-    }
-    input[type=submit] {
-        font-size: 1.5em;
     }
 
     #me {

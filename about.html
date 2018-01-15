@@ -11,13 +11,12 @@
         <link rel="icon" href="images/computer2.gif"/>
         <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
         <link rel="stylesheet" type="text/css" href="styles/home.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="script/about.js"></script>
     </head>
-
     <body>
-        <div class="header">
-            <h1>spencer.computer</h1> 
-        </div>
+        <!-- HEADER -->
+        <div class="header">spencer.compute<span style="letter-spacing: 0px">r</span></div>
         <div class="nav">
             <ul class="nav-bar">
                 <li class="nav-item">
@@ -37,11 +36,15 @@
                 </li>
             </ul>
         </div> <!-- nav -->
+        <!-- CONTENT -->
         <div class="content">
             <div class="column side">
             </div> <!-- column side -->
             <div class="column middle">
-                <h2 class="middle-header">about</h2> 
+                <div class="middle-header">
+                    about
+                </div> <!-- middle-header -->
+                <div class="middle-content">
                 <img id="me" 
                      src="images/headshot.jpg"
                      filter="none"
@@ -69,61 +72,33 @@
                 implementing musical audio algorithms on an <i>Analog 
                 Devices</i> SHARC ADSP-21489 digital signal processor. 
                 </p>
+                </div> <!-- middle-content -->
             </div> <!-- column middle --> 
             <div class="column side">
             </div> <!-- column side -->
         </div> <!-- content -->
         <!-- FOOTER -->
         <div class="footer">
-            <div class="column footer-side">
-            </div> <!-- column footer-side -->
-            <div class="column footer-middle left">
-            <ul class="footer-bar links">
-                <li class="footer-item">
-                    <a class="footer-link" 
-                        href="https://github.com/spencerwalters" 
-                        target="_blank">
-                        GitHub 
-                    </a>
-                </li>
-                <li class="footer-item">
-                    <a class="footer-link" 
-                        href="https://linkedin.com/in/spencer-walters" 
-                        target="_blank">
-                        LinkedIn 
-                    </a>
-                </li>
-                <li class="footer-item">
-                    <a class="footer-link" 
-                        href="https://twitter.com/spencerjwalters" 
-                        target="_blank">
-                        Twitter 
-                    </a>
-                </li>
-            </ul>
-            </div> <!-- column footer-middle left-->
-            <div class="column footer-middle right">
-            <ul class="footer-bar contact">
-                <li class="footer-item">
-                    <span class="footer-contact header">
-                        Contact 
-                    </span>
-                </li>
-                <li class="footer-item">
-                    <span class="footer-contact">
-                        &#x2709; spencerjwalters@gmail.com
-                    </span>
-                </li>
-                <li class="footer-item">
-                    <span class="footer-contact">
-                        &#9743; (630)398-2172 
-                    </span>
-                </li>
-            </ul>
-            </div> <!-- column footer-middle right -->
-
-            <div class="column footer-side">
-            </div> <!-- column footer-side -->
+            <a class="footer-link" 
+                href="https://github.com/spencerwalters" 
+                target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+            <a class="footer-link" 
+                href="https://linkedin.com/in/spencer-walters" 
+                target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a class="footer-link" 
+                href="https://twitter.com/spencerjwalters" 
+                target="_blank">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+            <a class="footer-link" 
+                href="https://soundcloud.com/sadpm" 
+                target="_blank">
+                <i class="fa fa-soundcloud"></i>
+            </a>
         </div> <!-- footer -->
     </body>
 </html>
