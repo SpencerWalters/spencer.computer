@@ -90,6 +90,7 @@ p {
 }
 
 .column.side {
+    box-sizing: border-box;
     width: 0%;
 }
 .column.middle {
@@ -97,12 +98,13 @@ p {
     padding: 0px 40px;
     font-family: cm;
     box-sizing: border-box;
-    min-height: 6in;
+    min-height: 100vh;
 }
 
 .middle-header {
     text-align: center;
-    font-size: 1.5em;
+    font-family: terminus;
+    font-size: 2.0em;
 }
 
 .footer {
@@ -112,6 +114,14 @@ p {
     width: 100%;
     background-color: #333;
 } 
+/*
+.column.footer-middle.left {
+    width: 34%;
+} 
+.column.footer-middle.right {
+    width: 33%;
+} 
+*/
 .column.footer-side {
     width: 0%;
     background-color: #333;
@@ -137,13 +147,25 @@ p {
     padding: 5px 8px;
     text-decoration: none;
 }
-
 .footer-link:hover {
     color: white;
 }
-
 .footer-link:active {
     color: white;
+}
+
+.footer-contact {
+    display: block;
+    color: #ddd;
+    text-align: center;
+    font-family: terminus;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+.footer-contact.header {
+    display: none;
 }
 
 input[type=text], input[type=email] {
@@ -184,7 +206,7 @@ input[type=submit] {
     margin: auto;
     max-width: 80%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
 /* Desktop */
@@ -231,12 +253,12 @@ input[type=submit] {
     }
     .column.middle {
         width: 67%; 
-        min-height: 10in;
+        min-height: 100vh;
     }
     .column.side {
         width: 16.5%;
         background-color: #cccccc; 
-        min-height: 10in;
+        min-height: 100vh;
     }
     .middle-header {font-size: 2.5em;}
 
@@ -244,10 +266,16 @@ input[type=submit] {
         background-color: #333;
     }
     .column.footer-middle {
-        width: 67%;
         height: 1.21in;
         background-color: #333;
     } 
+    .column.footer-middle.left {
+        width: 34%;
+    } 
+    .column.footer-middle.right {
+        width: 33%;
+    } 
+
     .column.footer-side {
         width: 16.5%;
         height: 1.21in;
@@ -266,7 +294,21 @@ input[type=submit] {
         text-decoration: none;
    
     }
-   
+    .footer-contact {
+        display: block;
+        color: #ddd;
+        text-align: right;
+        font-family: terminus;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        padding: 5px 8px;
+        text-decoration: none;
+    }
+    .footer-contact.header {
+        display: block;        
+        font-size: 1.4em;
+    }
+
     input[type=text], 
     input[type=email], 
     textarea {
