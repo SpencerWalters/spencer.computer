@@ -1,237 +1,237 @@
 /* Mobile First */
 @font-face {
-    font-family: cm;
-    src: url("../fonts/cmunrm.woff");
-    font-style: normal;
+  font-family: cm;
+  src: url("../fonts/cmunrm.woff");
+  font-style: normal;
 }
 
 @font-face {
-    font-family: terminus;
-    src: url("../fonts/Terminus.woff");
-    font-style: normal;
+  font-family: terminus;
+  src: url("../fonts/Terminus.woff");
+  font-style: normal;
 }
 
 @font-face {
-    font-family: monaco;
-    src: url("../fonts/monaco-webfont.woff");
-    font-style: normal;
+  font-family: monaco;
+  src: url("../fonts/monaco-webfont.woff");
+  font-style: normal;
 }
 
 body {
-    background-color: white;
-    margin: 0;
-    padding: 0;
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #888888;
+  text-decoration: none;
+  color: #888888;
 }
 
 p {
-    text-align: center;
-    font-size: 1.0em;
+  text-align: center;
+  font-size: 1.0em;
 }
 
 .code {
-    font-family: monaco;
-    font-size: 0.9em;
+  font-family: monaco;
+  font-size: 0.9em;
 }
 
 .header {
-    display: block;
-    margin: auto;
-    color: black;
-    font-size: 1em;
-    letter-spacing: 0.5em;
-    padding: 2vh 0;
-    font-family: terminus;
-    text-align: center;
-    max-width: 100%;
+  display: block;
+  margin: auto;
+  color: black;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  padding: 2vh 0;
+  font-family: terminus;
+  text-align: center;
+  max-width: 100%;
 }
 
 .nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #555;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #555;
 }
 .nav-item {
-    display: block;
+  display: block;
 }
 .nav-link {
-    display: block;
-    color: white;
-    text-align: center;
-    font-family: terminus;
-    font-size: 1.2em;
-    letter-spacing: 0.2em;
-    padding: 5px 8px;
-    text-decoration: none;
-    transition:         background-color 0.15s ease-out, 
-                        color 0.15s ease-in;
-    -moz-transition:    background-color 0.15s ease-out, 
-                        color 0.15s ease-in;
-    -webkit-transition: background-color 0.15s ease-out, 
-                        color 0.15s ease-in;
-    -o-transition:      background-color 0.15s ease-out, 
-                        color 0.15s ease-in;
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: terminus;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  padding: 5px 8px;
+  text-decoration: none;
+  transition: background-color 0.15s ease-out, 
+              color 0.15s ease-in;
+  -moz-transition: background-color 0.15s ease-out, 
+                   color 0.15s ease-in;
+  -webkit-transition: background-color 0.15s ease-out, 
+                      color 0.15s ease-in;
+  -o-transition: background-color 0.15s ease-out, 
+                 color 0.15s ease-in;
 }
 
 .nav-link:hover {
-    background-color: #eee;
-    color: black;
+  background-color: #eee;
+  color: black;
 }
 
 .nav-link:active {
-    background-color: #eee;
-    color: black;
+  background-color: #eee;
+  color: black;
 }
 
 .column.side {
-    box-sizing: border-box;
-    width: 0%;
+  box-sizing: border-box;
+  width: 0%;
 }
 .column.middle {
-    width: 100%;
-    font-family: cm;
-    box-sizing: border-box;
-    min-height: 100vh;
+  width: 100%;
+  font-family: cm;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 .middle-header {
-    background: #333;
-    color: white;
-    padding: 1.5vh 0;
-    text-align: center;
-    font-family: terminus;
-    font-size: 1.5em;
-    letter-spacing: 0.2em;
+  background: #333;
+  color: white;
+  padding: 1.5vh 0;
+  text-align: center;
+  font-family: terminus;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
 }
 .middle-content {
-    background: white;
-    padding: 5vh;
+  background: white;
+  padding: 5vh;
 }
 .footer {
-    width: 100%;
-    min-height: 8vh;
-    display: flex;
-    justify-content: center;
-    background-color: #444;
+  width: 100%;
+  min-height: 8vh;
+  display: flex;
+  justify-content: center;
+  background-color: #444;
 } 
 
 .footer-link {
-    display: inline-block;
-    color: #ddd;
-    text-align: center;
-    font-family: terminus;
-    font-size: 2em;
-    padding: 8px 12px;
-    text-decoration: none;
+  display: inline-block;
+  color: #ddd;
+  text-align: center;
+  font-family: terminus;
+  font-size: 2em;
+  padding: 8px 12px;
+  text-decoration: none;
 }
 .footer-link:hover {
-    color: white;
+  color: white;
 }
 .footer-link:active {
-    color: white;
+  color: white;
 }
 
 #me {
-    display: block;
-    margin: auto;
-    max-width: 80%;
-    height: auto;
-    border-radius: 5%;
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  height: auto;
+  border-radius: 5%;
 }
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
-    p {
-        font-size: 1.4em;
-        text-align: justify; 
-    }
+  p {
+    font-size: 1.4em;
+    text-align: justify; 
+  }
 
-    .header {
-        background: white;
-        color: black;
-        font-size: 2.7em;
-        padding: 5vh 0;
-    }
+  .header {
+    background: white;
+    color: black;
+    font-size: 2.7em;
+    padding: 5vh 0;
+  }
 
-    .nav-bar {
-        padding: 0 16.5%;
-    }
-    .nav-item {
-        float: left;
-    }
-    .nav-link {
-        font-size: 1.3em;
-        letter-spacing: 0.2em;
-        padding: 12px 16px;
-        text-decoration: none;
+  .nav-bar {
+    padding: 0 16.5%;
+  }
+  .nav-item {
+    float: left;
+  }
+  .nav-link {
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
+    padding: 12px 16px;
+    text-decoration: none;
 
-        transition:         background-color 0.15s ease-out, 
-                            color 0.15s ease-in;
-        -moz-transition:    background-color 0.15s ease-out, 
-                            color 0.15s ease-in;
-        -webkit-transition: background-color 0.15s ease-out, 
-                            color 0.15s ease-in;
-        -o-transition:      background-color 0.15s ease-out, 
-                            color 0.15s ease-in;
-    }
-    .nav-link:active {
-        background-color: #F44; 
-    }
+    transition: background-color 0.15s ease-out, 
+                color 0.15s ease-in;
+    -moz-transition: background-color 0.15s ease-out, 
+                     color 0.15s ease-in;
+    -webkit-transition: background-color 0.15s ease-out, 
+                        color 0.15s ease-in;
+    -o-transition: background-color 0.15s ease-out, 
+                   color 0.15s ease-in;
+  }
+  .nav-link:active {
+    background-color: #F44; 
+  }
 
-    .column {
-        float: left;
-        box-sizing: border-box;
-    }
-    .column.middle {
-        width: 67%; 
-        min-height: 90vh;
-        background: white;
-    }
-    .column.side {
-        width: 16.5%;
-        background-color: white; 
-        min-height: 90vh;
-    }
-    .middle-header {
-        background: white;
-        color: black;
-        padding: 3vh 0;
-        font-size: 2.5em;
-    }
-    .middle-content {
-        background: #f5f5f5;
-        border-radius: 20px;
-    }
-    .footer-link {
-        display: inline-block;
-        text-align: center;
-        font-size: 1.7em;
-        letter-spacing: 0.2em;
-        padding: 1.7vh 2.0vh;
-        text-decoration: none;
-    }
+  .column {
+    float: left;
+    box-sizing: border-box;
+  }
+  .column.middle {
+    width: 67%; 
+    min-height: 90vh;
+    background: white;
+  }
+  .column.side {
+    width: 16.5%;
+    background-color: white; 
+    min-height: 90vh;
+  }
+  .middle-header {
+    background: white;
+    color: black;
+    padding: 3vh 0;
+    font-size: 2.5em;
+  }
+  .middle-content {
+    background: #f5f5f5;
+    border-radius: 20px;
+  }
+  .footer-link {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.7em;
+    letter-spacing: 0.2em;
+    padding: 1.7vh 2.0vh;
+    text-decoration: none;
+  }
 
-    #me {
-        float: left;
-        margin: 35px; 
-        max-width: 30%;
+  #me {
+    float: left;
+    margin: 35px; 
+    max-width: 30%;
 
-        filter: none;
-        transition: filter 1s;
-        -moz-transition: filter 1s;
-        -webkit-transition: filter 1s;
-        -o-transition: filter 1s;
-        transition-timing-function: linear;
-        -moz-transition-timing-function: linear;
-        -webkit-transition-timing-function: linear;
-        -o-transition-timing-function: linear;
-    }
-    #me:hover {
-        filter: blur(10px);
-    }
+    filter: none;
+    transition: filter 1s;
+    -moz-transition: filter 1s;
+    -webkit-transition: filter 1s;
+    -o-transition: filter 1s;
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+  }
+  #me:hover {
+    filter: blur(10px);
+  }
 }
