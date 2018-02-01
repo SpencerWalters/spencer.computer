@@ -70,24 +70,18 @@ p {
   padding: 5px 8px;
   text-decoration: none;
   border-radius: 0 0 5px 5px;
-  transition: background-color 0.15s ease-out, 
-              color 0.15s ease-in;
-  -moz-transition: background-color 0.15s ease-out, 
-                   color 0.15s ease-in;
-  -webkit-transition: background-color 0.15s ease-out, 
-                      color 0.15s ease-in;
-  -o-transition: background-color 0.15s ease-out, 
-                 color 0.15s ease-in;
+  transition: color 0.10s ease-out;
+  -moz-transition: color 0.10s ease-out;
+  -webkit-transition: color 0.10s ease-out;
+  -o-transition: color 0.10s ease-out;
 }
 
 .nav-link:hover {
-  background-color: #f5f5f5;
-  color: black;
+  color: #aaa;
 }
 
 .nav-link:active {
-  background-color: #f5f5f5;
-  color: black;
+  color: #aaa;
 }
 
 .column.side {
@@ -160,9 +154,9 @@ p {
   }
 
   .nav-bar {
-    border-style: solid;
+/*    border-style: solid;
     border-width: 1px 0 0 0;
-    border-color: #f5f5f5;
+    border-color: #f5f5f5;*/
     padding: 0 16.5%;
   }
   .nav-item {
@@ -173,18 +167,6 @@ p {
     letter-spacing: 0.2em;
     padding: 12px 16px;
     text-decoration: none;
-
-    transition: background-color 0.15s ease-out, 
-                color 0.15s ease-in;
-    -moz-transition: background-color 0.15s ease-out, 
-                     color 0.15s ease-in;
-    -webkit-transition: background-color 0.15s ease-out, 
-                        color 0.15s ease-in;
-    -o-transition: background-color 0.15s ease-out, 
-                   color 0.15s ease-in;
-  }
-  .nav-link:active {
-    background-color: #F44; 
   }
 
   .column {
